@@ -15,7 +15,7 @@
 	<body>
         <div class="container">
         	<div class="five columns">
-            	<a href="<?php get_option ('home'); ?><img src="">
+            	<a href="<?php get_option ('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.jpg" title="<?php bloginfo('title'); ?>"></a>
             </div>
         </div>
     </body>
