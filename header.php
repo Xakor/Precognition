@@ -8,7 +8,7 @@
             ?>
         </title>
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/style.css">
-        <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/css/grid12.css">
+        <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/css/grid12_nogutter.css">
         <?php wp_head(); ?>
 
     </head>
