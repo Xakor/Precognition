@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <div class="container_12">
-    <div id="widget" class="grid_4 floatleft shadow">
+    <div id="widget" class="grid_4 floatleft shadow footerfix">
         <?php get_sidebar(); ?>
     </div>
-    <div id="content" class="grid_8 floatright shadow">
+    <div id="content" class="grid_8 floatright shadow footerfix">
         <?php
             if ( have_posts() ) {
                 while ( have_posts() ) {
