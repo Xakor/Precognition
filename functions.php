@@ -16,7 +16,7 @@
         register_sidebar( array(
             'name' => 'Home Left Sidebar',
             'id' => 'home_left_1',
-            'before_widget' => '<div class="grid_4">',
+            'before_widget' => '<div id="widget" class="grid_4">',
             'after_widget' => '</div>',
             'before_title' => '<h2>',
             'after_title' => '</h2>',
