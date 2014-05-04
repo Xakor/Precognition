@@ -373,3 +373,14 @@ body {
   zoom: 1;
 }
 
+/*
+    Add floating
+*/
+
+.floatright{
+    float: right;
+}
+
+.floatleft{
+    float: left;
+}

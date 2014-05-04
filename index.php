@@ -1,11 +1,14 @@
 <?php get_header(); ?>
 <div class="container_12">
+    <div class="grid_4 floatleft">
+        <?php get_sidebar(); ?>
+    </div>
     <?php
         if ( have_posts() ) {
             while ( have_posts() ) {
                 the_post(); ?>
 
-                <div class="grid_8 push_4">
+                <div class="grid_8 floatright">
                     <div class="grid_8">
                         <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
                     </div>
@@ -25,5 +28,4 @@
         } // end if
     ?>
 </div>
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
