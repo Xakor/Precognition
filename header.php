@@ -32,8 +32,12 @@
             <a href="<?php get_option ('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo_temp.png" title="<?php bloginfo('title'); ?>"></a>
         </div>
         <div class="container_12">
-            <div class="grid_4 red">Search Bar</div>
-            <div class="grid_8 push_4 red">Menu bar</div>
+            <div class="grid_4 red">
+                Search Bar
+            </div>
+            <div class="grid_8 red">
+                <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+            </div>
         </div>
             
     </body>
