@@ -7,6 +7,22 @@
         );
     }
 
+    /**
+     * Register our sidebars and widgetized areas.
+     *
+     */
+    function arphabet_widgets_init() {
+
+        register_sidebar( array(
+            'name' => 'Home Left Sidebar',
+            'id' => 'home_left_1',
+            'before_widget' => '<div class="grid_4">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2>',
+            'after_title' => '</h2>',
+        ) );
+    }
+
     function custom_enqueue_scripts() {
 
         //* Load scripts only if custom background is being used
@@ -37,6 +53,7 @@
     }
 
     add_action( 'init', 'register_menus' );
+    add_action( 'widgets_init', 'arphabet_widgets_init' );
     add_action( 'wp_enqueue_scripts', 'custom_enqueue_scripts' );
 
 
