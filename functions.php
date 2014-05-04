@@ -1,9 +1,10 @@
-
 <?php
-// Create nav menu
-if(function_exists('register_nav_menus')) {
-	register_nav_menus ( array( 'primary' => 'Header Navigation' ));
-}
-
-
-?>	
+    function register_menus() {
+        register_nav_menus(
+            array(
+                'primary' => __( 'Header Navigation' )
+            )
+        );
+    }
+    add_action( 'init', 'register_menus' );
+?>
