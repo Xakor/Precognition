@@ -10,8 +10,13 @@ Version: 1.0
     font-family: "Lato", Myriad Pro, Helvetica, Arial, Sans Serif;
     color: #111;
 }
+
 body {
 	margin: 0;
+}
+
+h1, h2, h3{
+	margin:0 0 5px 0;
 }
 
 /* HEADER */
@@ -19,10 +24,9 @@ body {
 .head_banner_area {
 	background: #f0f0f0;
 	text-align: center;
-
 }
 .head_banner {
-	
+
 }
 .head_basket_area{
 	background: #f0f0f0;
@@ -74,14 +78,25 @@ body {
 
 /* CONTENT */
 
+/*
+Wrapper is design-id for the Container_12 that contains the content and sidebar.
+*/
+#wrapper{
+	height:auto;
+}
+
 #content{
     background: #ffffff;
-    margin-bottom:20px;
 }
 
 #widget{
     background: #f0f0f0;
-    margin-bottom:20px;
+}
+
+.boxsizing{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+ 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 .red {
@@ -89,7 +104,11 @@ body {
 }
 
 .shadow{
-    -webkit-box-shadow: 0 0 35px -20px #333;
-    box-shadow: 0 0 35px -20px #333;
+	-webkit-box-shadow: 0 8px 6px -6px #C5C5C5;
+	-moz-box-shadow: 0 8px 6px -6px #C5C5C5;
+	box-shadow: 0 8px 6px -6px #C5C5C5;
 }
 
+.padding{
+	padding:20px;
+}
