@@ -4,9 +4,29 @@ Author: Frank Andersen, Rasmus Sommer Larsen
 Author URL: Gustenfyr.net, Somdev.net
 Description: Wordpress & WooCommerce
 Version: 1.0
-<<<<<<< HEAD
 */
-.red {backgrund: red;}
-=======
-*/
->>>>>>> 20cea72d547ed58b083121bba8e0f31b38929be5
+
+*{
+    font-family: "Lato", Myriad Pro, Helvetica, Arial, Sans Serif;
+    color: #111;
+}
+
+#content{
+    background: #ffffff;
+    margin-bottom:20px;
+}
+
+#widget{
+    background: #f0f0f0;
+    margin-bottom:20px;
+}
+
+.red {
+    backgrund: red;
+}
+
+.shadow{
+    -webkit-box-shadow: 0 0 35px -20px #333;
+    box-shadow: 0 0 35px -20px #333;
+}
+
