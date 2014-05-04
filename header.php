@@ -8,7 +8,7 @@
             ?>
         </title>
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/style.css">
-        <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/skeleton.css">
+        <!-- <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url');?>/skeleton.css"> -->
         <?php wp_head(); ?>
 
     </head>
