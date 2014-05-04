@@ -372,3 +372,11 @@ body {
 .clearfix {
   zoom: 1;
 }
+
+.floatright{
+    float:right;
+}
+
+.floatleft{
+    float:left;
+}
