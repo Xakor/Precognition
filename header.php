@@ -14,9 +14,14 @@
     </head>
 	<body>
         <div class="container">
-        	<div class="five columns">
-            	<a href="<?php get_option ('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.jpg" title="<?php bloginfo('title'); ?>"></a>
-            </div>
+            <header>
+                <div class="five columns clearfix">
+                    <a href="<?php get_option ('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.jpg" title="<?php bloginfo('title'); ?>"></a>
+                </div>
+                <div class="sixteen columns nav-bar">
+                	<?php wp_nav_menu( array( 'container_class' => 'main-nav', 'container' => 'nav') ); ?>
+                </div>
+            </header>
         </div>
     </body>
 </html>
