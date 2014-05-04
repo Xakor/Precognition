@@ -10,22 +10,25 @@ Version: 1.0
     font-family: "Lato", Myriad Pro, Helvetica, Arial, Sans Serif;
     color: #111;
 }
+body {
+	margin: 0;
+}
 
 /* HEADER */
 
 .head_banner_area {
 	background: #f0f0f0;
+	text-align: center;
 
 }
 .head_banner {
-	margin: 0px auto;
+	
 }
-.head_search_area{
+.head_basket_area{
 	background: #f0f0f0;
 	height: 75px;
 }
-.search_bar {
-
+.basket_bar {
 	background: #696969;
 	color: #ffffff;
 	height: 45px;
@@ -34,6 +37,7 @@ Version: 1.0
 	border: none;
 	margin: 10px 0;
 	font-weight: 400;
+	line-height: 22px;
 }
 .head_menu_area {
 	background: #696969;
