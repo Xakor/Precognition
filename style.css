@@ -11,6 +11,65 @@ Version: 1.0
     color: #111;
 }
 
+/* HEADER */
+
+.head_banner_area {
+	background: #f0f0f0;
+
+}
+.head_banner {
+	margin: 0px auto;
+}
+.head_search_area{
+	background: #f0f0f0;
+	height: 75px;
+}
+.search_bar {
+
+	background: #696969;
+	color: #ffffff;
+	height: 45px;
+	width: 300px;
+	font-size: 14pt;
+	border: none;
+	margin: 10px 0;
+	font-weight: 400;
+}
+.head_menu_area {
+	background: #696969;
+	height: 65px;
+}
+.head_menu_area li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+	text-align: center;
+}
+.head_menu_area li a {
+	text-decoration: none;
+	font-size: 14pt;
+	color: #f0f0f0;
+	padding-bottom: 3px;
+	line-height: 32px;
+	font-weight: 400;
+	text-transform:capitalize;
+	webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.head_menu_area li a:hover {
+	border-bottom: solid 1px #f0f0f0;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+/* CONTENT */
+
 #content{
     background: #ffffff;
     margin-bottom:20px;

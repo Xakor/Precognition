@@ -13,14 +13,15 @@
 
     </head>
 	<body>
-        <div class="container_12" head_banner_area>
-            <a href="<?php get_option ('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo_temp.png" title="<?php bloginfo('title'); ?>"></a>
+        <div class="container_12 head_banner_area">
+            <a href="<?php get_option ('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo_temp.png" class="head_banner" title="<?php bloginfo('title'); ?>"></a>
         </div>
         <div class="container_12">
             <div class="grid_4 red head_search_area">
-                Search Bar
+                <input type="text" name="searchbar" class="search_bar" placeholder="Search">
             </div>
             <div class="grid_8 red head_menu_area">
                 <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
             </div>
         </div>
+    <div class="clear" style="margin-bottom:20px;"></div>
