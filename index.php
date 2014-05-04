@@ -8,7 +8,7 @@
             while ( have_posts() ) {
                 the_post(); ?>
 
-                <div id="content" class="grid_8 floatright">
+                <div id="content" class="grid_8 floatright shadow">
                     <div class="grid_8">
                         <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
                     </div>
@@ -16,7 +16,7 @@
                         <small><?php the_time('F jS, Y') ?> by <?php the_author_posts_link() ?></small>
                     </div>
                     <div class="grid_8">
-                        <p><?php the_content(); ?></p>
+                        <?php the_content(); ?>
                     </div>
                     <div class="grid_8">
                         <p class="postmetadata">Posted in <?php the_category(', '); ?></p>
