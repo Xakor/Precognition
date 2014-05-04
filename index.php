@@ -5,7 +5,7 @@
             while ( have_posts() ) {
                 the_post(); ?>
 
-                <div class="grid_8 pull_1">
+                <div class="grid_8 push_4">
                     <div class="grid_8">
                         <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
                     </div>

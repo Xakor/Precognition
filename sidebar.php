@@ -1,0 +1,1 @@
+<?php if ( dynamic_sidebar('home_left_1') ) : else : endif; ?>
