@@ -21,6 +21,33 @@
             'before_title' => '<h2>',
             'after_title' => '</h2>',
         ) );
+
+        register_sidebar( array(
+            'name' => 'Footer Left',
+            'id' => 'footer_left',
+            'before_widget' => '<div id="footer_widget">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2><center>',
+            'after_title' => '</center></h2>',
+        ) );
+
+        register_sidebar( array(
+            'name' => 'Footer Mid',
+            'id' => 'footer_mid',
+            'before_widget' => '<div id="footer_widget">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2><center>',
+            'after_title' => '</center></h2>',
+        ) );
+
+        register_sidebar( array(
+            'name' => 'Footer Right',
+            'id' => 'footer_right',
+            'before_widget' => '<div id="footer_widget">',
+            'after_widget' => '</div>',
+            'before_title' => '<h2><center>',
+            'after_title' => '</center></h2>',
+        ) );
     }
 
     function custom_enqueue_scripts() {
@@ -46,6 +73,18 @@
 
         printf( '<style>body { background-color: #%s; }</style>' . "\n", get_background_color() );
 
+    }
+
+    //* Enable PHP in TEXT widget
+    add_filter('widget_text','execute_php',100);
+    function execute_php($html){
+         if(strpos($html,"<"."?php")!==false){
+              ob_start();
+              eval("?".">".$html);
+              $html=ob_get_contents();
+              ob_end_clean();
+         }
+         return $html;
     }
 
     add_action( 'init', 'register_menus' );
