@@ -19,15 +19,15 @@
         <?php wp_head(); ?>
 
     </head>
-	<body>
+	<body <?php body_class(); ?>>
         <div class="container_12 head_banner_area">
             <a href="<?php get_option ('home'); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo_temp.png" class="head_banner" title="<?php bloginfo('title'); ?>"></a>
         </div>
         <div class="container_12">
-            <div class="grid_4 red head_basket_area">
+            <div class="grid_3 red head_basket_area">
                 <div class="basket_bar">199,95 kr</div>
             </div>
-            <div class="grid_8 red head_menu_area">
+            <div class="grid_9 red head_menu_area">
                 <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
             </div>
         </div>

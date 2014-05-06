@@ -33,10 +33,6 @@ footer{
 	margin-bottom:170px;
 }
 
-h1, h2, h3{
-	margin:0 0 5px 0;
-}
-
 /* HEADER */
 
 .head_banner_area {
@@ -130,3 +126,5 @@ Wrapper is design-id for the Container_12 that contains the content and sidebar.
 .padding{
 	padding:20px;
 }
+
+/* PRODUCTS */

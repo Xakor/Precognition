@@ -16,7 +16,7 @@
         register_sidebar( array(
             'name' => 'Home Left Sidebar',
             'id' => 'home_left_1',
-            'before_widget' => '<div class="grid_4 padding boxsizing">',
+            'before_widget' => '<div class="grid_3 padding boxsizing">',
             'after_widget' => '</div>',
             'before_title' => '<h2>',
             'after_title' => '</h2>',
